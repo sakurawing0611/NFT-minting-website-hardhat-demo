@@ -5,10 +5,11 @@ async function main() {
 
   const RoboPunksNFT = await hre.ethers.getContractFactory("RoboPunksNFT");
   const roboPunksNFT = await RoboPunksNFT.deploy();
-
+  
   await roboPunksNFT.deployed();
 
   console.log("RoboPunksNFT deployed to:", roboPunksNFT.address);
+  
 }
 
 // We recommend this pattern to be able to use async/await everywhere
